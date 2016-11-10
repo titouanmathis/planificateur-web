@@ -21,7 +21,7 @@
 		},
 		computed: {
 			value() {
-				return store.state.students
+				return store.state[this.id]
 			}
 		},
 		watch: {
