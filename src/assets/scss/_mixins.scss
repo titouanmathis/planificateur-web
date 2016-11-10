@@ -1,0 +1,16 @@
+@mixin scrollbar($scrollbar-thickness: 12px, $thumb-thickness: 4px, $bg-track: #fff, $bg-thumb: #555) {
+
+	&::-webkit-scrollbar {
+		width: $scrollbar-thickness;
+		height: $scrollbar-thickness;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: $bg-track;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: $bg-thumb;
+		border: ($scrollbar-thickness - $thumb-thickness) / 2 solid $bg-track;
+	}
+}
