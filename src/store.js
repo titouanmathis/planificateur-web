@@ -50,7 +50,8 @@ export default new Vuex.Store({
 			// Format result
 			forEach(cleanedDates, (date, i) => {
 				state.results.push({
-					date: moment(date).format('dddd DD MMMM'),
+					date: date,
+					// date: moment(date).format('dddd DD MMMM'),
 					students: temp[i]
 				})
 			})
